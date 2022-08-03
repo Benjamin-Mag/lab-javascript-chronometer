@@ -25,8 +25,6 @@ To check how your final version should look like check this **[demo](https://san
 - Fork this repo.
 - Clone this repo.
 
-  
-
 ## Submission
 
 - Upon completion, run the following commands:
@@ -69,11 +67,10 @@ We have also created the clock to let you focus on the JavaScript portion of thi
 <br>
 
 ![](https://education-team-2020.s3-eu-west-1.amazonaws.com/web-dev/labs/chronometer.png)
+
 </details>
 
-
-
-**This lab is divided  into two main parts**:
+**This lab is divided into two main parts**:
 
 - Part 1: the logic (which you will be adding to the `javascript/chronometer.js` file).
 - Part 2: the DOM manipulation, so we can visually represent and showcase the previously written logic (the code you will add in the `javascript/index.js`).
@@ -87,8 +84,6 @@ When called, `setInterval` returns a number that can be used to identify the _in
 ### Iteration 1: The logic
 
 In the first part of the LAB, you will be working on the `javascript/chronometer.js` file.
-
-
 
 #### The `Chronometer` class
 
@@ -193,7 +188,7 @@ We will be working on the `javascript/index.js` file. We need to do the followin
 
 - When the left button is clicked while the chronometer is stopped, we need to:
 
-  - Set the `btnLeft` button with the text STOP, and the class `btn stop` 
+  - Set the `btnLeft` button with the text STOP, and the class `btn stop`
   - Set the `btnRight` button with the text SPLIT, and the class `btn split`.
 
 - When the left button is clicked while the chronometer is running we need to:
@@ -219,7 +214,7 @@ Hint: if you remember, the start method expects a callback as an argument and 
 <br />
 
 ![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_1a87e0edfb6efea2ae0c77c490e8563b.png)
-    
+
 </details>
 
 ### Iteration 3: Split time
@@ -230,16 +225,14 @@ The following feature we will implement is the split button. Remember that the s
 
 First of all, we have to locate in our `index.html` file an ordered list where we are going to append the current time every time we press the split button - it has an id of `splits`, and we have it targeted at the befinning of our index.js file.
 
-
 #### JavaScript
 
 Once we have located the ordered list in our HTML, we have to create the button functionality. Every time we click on the split button, we will have to create a new `li` element and append it to the ordered list. The text of this element will be the current time of the chronometer (we have a method on our Chronometer that returns this :wink:).
 
-Therefore, first we should create a list item every time we click on the button. 
+Therefore, first we should create a list item every time we click on the button.
 After that, we should add a class name to this list item ('list-item').
 Then we should update the innerHTML with the result of our method `split`in chronometer.
 And finally we should append it to the parent element in the html file (the ordered list with `id`s of '`splits`)
-
 
 <details>
   <summary> Click here to see the image </summary>
@@ -247,9 +240,8 @@ And finally we should append it to the parent element in the html file (the orde
 <br>
 
 ![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a5c9687f25bd710b2e7658ee6d997174.png)
-    
-</details>
 
+</details>
 
 ### Iteration 4: Reset
 
@@ -275,15 +267,13 @@ Your goal is to create the JavaScript logic to:
 
 This lab is a little bit complex, but it will guide you through the logical process of solving the problem and, at the same time, by following the guidelines, you will learn how to separate concerns between the logic and the DOM manipulation (which are the visuals).
 
-
 ## Test Your Code
-
 
 ## Tests, tests, tests!
 
 This LAB is equipped with unit tests to provide automated feedback on your lab progress. You'll start by working with the tests and using them in conjunction with the iteration instructions.
 
-Please, open your terminal, change directories into the root of the lab, and run `npm install` to install the test runner. Next run the `npm run test:watch` command to run automated tests.  
+Please, open your terminal, change directories into the root of the lab, and run `npm install` to install the test runner. Next run the `npm run test:watch` command to run automated tests.
 
 ```shell
 $ cd lab-javascript-chronometer
@@ -295,10 +285,9 @@ $ npm run test:watch
 
 Open the resulting `lab-solution.html` file with the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VSCode extension to see the test results.
 
-**Note:** The testing environment and the `lab-solution.html` page don’t allow printing the _console logs_ in the browser.  
+**Note:** The testing environment and the `lab-solution.html` page don’t allow printing the _console logs_ in the browser.
 
 To see the console.log outputs you write in any of the JavaScript files, open the `index.html` file using the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VSCode extension.
-
 
 <br>
 
