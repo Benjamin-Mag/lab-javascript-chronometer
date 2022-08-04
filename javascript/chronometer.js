@@ -26,11 +26,11 @@ class Chronometer {
       return `0${value}`;
     } else {
       return `${value}`;
-    }    // ... your code goes here
+    } // ... your code goes here
   }
-  
+
   stop() {
-    // ... your code goes here
+    clearInterval(this.intervalId);
   }
 
   reset() {
